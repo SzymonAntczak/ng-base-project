@@ -28,9 +28,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/destyle.css/destyle.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -53,7 +55,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumError": "5.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
