@@ -1,12 +1,10 @@
 @import '../../../../styles/lib';
 
 :host {
-  background: color(white, 2);
   display: grid;
   width: 100%;
-  grid-row-gap: $desktop-section-gap;
   overflow-x: hidden;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "main-navbar main-navbar"
@@ -14,15 +12,12 @@
     "main-footer main-footer"
   ;
 
-  @include tablet() { grid-row-gap: $tablet-section-gap; }
-  @include phone() { grid-row-gap: $mobile-section-gap; }
-
-  dvt-main-navbar { grid-area: main-navbar; }
+  app-main-navbar { grid-area: main-navbar; }
 
   .layout-content {
     min-height: 100vh;
     grid-area: router-outlet;
   }
 
-  dvt-main-footer { grid-area: main-footer; }
+  app-main-footer { grid-area: main-footer; }
 }

@@ -1,7 +1,30 @@
 @import '../../../../../styles/lib';
 
 :host {
+  background: color(black, 1, .1);
+  border-bottom: 1px solid color(black, 1, .2);
 
+  .navbar {
+    padding: 15px 0;
+
+    ul.menu {
+      @include flex();
+
+      li {
+        padding: 0 5px;
+
+        a {
+          padding: 10px;
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: $time-fastest opacity;
+
+          &:hover { opacity: .8; }
+        }
+      }
+    }
+  }
 }
 
 

@@ -6,6 +6,8 @@ const routes: Routes = [
   { path: '', component: BaseLayout,
     children: [
       { path: '', loadChildren: './views/home/home.module#HomeViewModule' },
+      { path: 'languages', loadChildren: './views/languages/languages.module#LanguagesViewModule' },
+      { path: 'currencies', loadChildren: './views/currencies/currencies.module#CurrenciesViewModule' }
     ]
   },
 ];

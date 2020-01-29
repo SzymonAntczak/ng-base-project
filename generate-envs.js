@@ -16,7 +16,7 @@ let getParam = function(name) {
 
 
 tmpParam = getParam('api');
-let api = !!tmpParam ? tmpParam : '';
+let api = !!tmpParam ? tmpParam : 'https://api.exchangeratesapi.io/';
 
 tmpParam = getParam('version');
 let version = !!tmpParam ? tmpParam : package.version;

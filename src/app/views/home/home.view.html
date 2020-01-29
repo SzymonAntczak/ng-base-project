@@ -1,1 +1,48 @@
 
+<section class="grid-main-content">
+  <div class="container">
+
+    <div class="intro">
+      <span class="title">Witaj w kalkulatorze walut</span>
+      <p class="description">Poniższy kalkulator pozwoli Ci przeliczyć kwotę w walucie wskazanej jako 'Bazowa' na dowolną inną spośród dostępnych w naszej bazie. By wybrać waluty przejdź w zakładkę 'Waluty', a zobaczysz wszystkie dostępne opcje.</p>
+    </div>
+
+    <div id="calc">
+      <span class="title">Kalkulator</span>
+
+      <div class="calc-wrapper">
+        <div class="calc-base">
+          <span class="description">Wybrana waluta bazowa: </span>
+          <span class="base-currency">{{ baseCurrency }}</span>
+
+          <form [formGroup]="form" (submit)="calculate()">
+            <div class="form-group">
+              <label>Wpisz kwotę:</label>
+              <input type="number" min="0" formControlName="value">
+            </div>
+            <div class="form-group">
+              <button type="submit">Przelicz</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="calc-result">
+          <span class="description">Wyniki:</span>
+
+          <div class="results">
+            <div class="result">
+              <span class="currency">asd:</span>
+              <span class="value">123</span>
+            </div>
+
+            <div class="result">
+              <span class="currency">asd:</span>
+              <span class="value">123</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

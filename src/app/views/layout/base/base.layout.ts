@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'dvt-base-layout',
+  selector: 'app-base-layout',
   templateUrl: './base.layout.html',
   styleUrls: ['./base.layout.scss']
 })

@@ -3,12 +3,15 @@ import { CommonModule } from '@angular/common';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    InlineSVGModule.forRoot()
+    InlineSVGModule.forRoot(),
+    ReactiveFormsModule,
+    FormsModule
   ],
   declarations: [
     LoaderComponent
@@ -17,7 +20,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     LoaderComponent,
     CommonModule,
     RouterModule,
-    InlineSVGModule
+    InlineSVGModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class SharedModule { }
